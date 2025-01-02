@@ -37,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('用戶登入'),
+        title: const Text('雲端大師用戶登入'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

@@ -1,6 +1,5 @@
-// lib/main.dart
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
+import 'package:exam_demo/screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginScreen(),
+      debugShowCheckedModeBanner: false, // 隱藏 debug 標籤
+      home: const LoginScreen(), // 設定初始頁面為登入頁面
     );
   }
 }
