@@ -40,6 +40,35 @@ lib/
 - **Flutter SDK**: 3.5.0 或更高版本
 - **Dart**: 自動與 Flutter 一起安裝
 
+### 🔧 環境搭建 (Linux / Dev Container)
+
+如果您是在全新的 Linux 環境或 Dev Container 中開發，請按照以下步驟安裝 Flutter 環境：
+
+1. **安裝系統依賴**
+   ```bash
+   sudo apt-get update
+   sudo apt-get install -y git curl unzip xz-utils zip libglu1-mesa
+   # 如果需要編譯 Linux 桌面版，還需安裝：
+   sudo apt-get install -y build-essential cmake ninja-build libgtk-3-dev
+   ```
+
+2. **安裝 Flutter SDK**
+   ```bash
+   cd ~
+   git clone https://github.com/flutter/flutter.git -b stable
+   ```
+
+3. **配置環境變量**
+   ```bash
+   export PATH="$HOME/flutter/bin:$PATH"
+   # 建議將此行添加到您的 shell 配置文件中 (.bashrc 或 .zshrc)
+   ```
+
+4. **啟用 Web 支持**
+   ```bash
+   flutter config --enable-web
+   ```
+
 ### 安裝步驟
 
 1. **克隆項目**
