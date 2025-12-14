@@ -84,7 +84,7 @@ lib/
 
 3. **運行應用**
 
-   **Web 版本（推薦開發）**
+   **Web 版本**
    ```bash
    flutter run -d web
    ```
