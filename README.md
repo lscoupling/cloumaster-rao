@@ -1,16 +1,76 @@
-# exam_demo
+# 📝 Exam Demo - 線上考試系統
 
-A new Flutter project.
+一款基於 Flutter 開發的跨平台線上考試應用，支援 **Web、Android、iOS、Linux、Windows、macOS** 等多個平台。
 
-## Getting Started
+## 🎯 核心功能
 
-This project is a starting point for a Flutter application.
+- ✅ **用戶認證系統** - 登入/註冊功能（支援用戶身份驗證）
+- ✅ **考試選擇** - 瀏覽並選擇不同的考試科目
+- ✅ **題目展示** - 實時加載和顯示考試題目
+- ✅ **統計分析** - 查看考試成績統計和分析
+- ✅ **本地數據存儲** - 題目和用戶數據的 DAO 層
 
-A few resources to get you started if this is your first Flutter project:
+## 📦 項目結構
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+lib/
+├── main.dart                    # 應用入口點
+├── screens/                     # 所有頁面
+│   ├── login_screen.dart       # 登入頁面
+│   ├── exam_selection_screen.dart  # 考試選擇頁面
+│   ├── question_screen.dart    # 題目頁面
+│   └── stats_screen.dart       # 統計頁面
+├── controllers/                 # 業務邏輯控制器
+│   └── exam_controller.dart    # 考試控制器
+├── services/                    # 服務層
+│   └── auth_service.dart       # 認證服務
+├── dao/                         # 數據訪問層
+│   └── question_dao.dart       # 題目 DAO
+├── models/                      # 數據模型
+│   ├── user.dart               # 用戶模型
+│   └── question.dart           # 題目模型
+└── components/                  # 可復用組件
+    └── question_widget.dart    # 題目組件
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 快速開始
+
+### 環境要求
+
+- **Flutter SDK**: 3.5.0 或更高版本
+- **Dart**: 自動與 Flutter 一起安裝
+
+### 安裝步驟
+
+1. **克隆項目**
+   ```bash
+   git clone https://github.com/lscoupling/cloumaster-rao.git
+   cd cloumaster-rao
+   ```
+
+2. **獲取依賴**
+   ```bash
+   flutter pub get
+   ```
+
+3. **運行應用**
+
+   **Web 版本（推薦開發）**
+   ```bash
+   flutter run -d web
+   ```
+
+   **Android 版本**
+   ```bash
+   flutter run -d android
+   ```
+
+   **iOS 版本**
+   ```bash
+   flutter run -d ios
+   ```
+
+   **Linux 桌面版本**
+   ```bash
+   flutter run -d linux
+   ```
